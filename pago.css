@@ -1,0 +1,90 @@
+@media (max-width: 768px) {
+    /* Ajustes para pantallas pequeñas como tablets o celulares */
+    
+    header {
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tituloprincipal {
+        font-size: 40px; /* Reducir el tamaño de la fuente en móviles */
+        margin-left: 0;  /* Eliminar márgenes grandes en móviles */
+    }
+
+    .imagen-logoprincipal {
+        width: 100px;
+        height: 100px;
+        margin-left: 0; /* Centrar el logo */
+    }
+
+    .boton-carrito {
+        font-size: 20px;
+        margin-right: 0; /* Centramos en móviles */
+        margin-top: 10px; /* Añadir espacio si es necesario */
+    }
+
+    .pagina-pago {
+        flex-direction: column; /* Apilamos las columnas en una sola */
+    }
+
+    .productos-carrito, .informacion-pago {
+        width: 100%; /* Para que ocupen el 100% del ancho en móviles */
+        margin: 0;   /* Eliminar márgenes grandes */
+        padding: 10px; /* Reducir el padding */
+    }
+
+    .input-container input, .input-container select {
+        padding: 10px;  /* Ajustar padding para pantallas pequeñas */
+        font-size: 12px; /* Reducir tamaño de la fuente */
+    }
+
+    #qr-yape {
+        max-width: 180px; /* Ajustar el tamaño del QR en móviles */
+    }
+
+    .producto {
+        flex-direction: column; /* Apilar los productos verticalmente */
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .precio {
+        margin-left: 0; /* Alinear precios a la izquierda */
+        margin-top: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-correo, .footer-logos {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes adicionales para pantallas muy pequeñas (celulares chicos) */
+    
+    .tituloprincipal {
+        font-size: 32px; /* Aún más pequeño para celulares pequeños */
+    }
+
+    .imagen-logoprincipal {
+        width: 80px;
+        height: 80px;
+    }
+
+    .boton-carrito {
+        font-size: 18px;
+    }
+
+    #submitButton1 {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        height: 45px;
+    }
+}
